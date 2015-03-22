@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+END_OF_FILE	input.c	/^unsigned char END_OF_FILE = 255;$/;"	v
+Input	input.c	/^struct Input Input;$/;"	v	typeref:struct:Input
+Input	input.h	/^struct Input$/;"	s
+base	input.h	/^	unsigned char *base;  	 \/* 映射的文件基指针 *\/$/;"	m	struct:Input
+closeSourceFile	input.c	/^void closeSourceFile(void)$/;"	f
+cursor	input.h	/^	unsigned char *cursor;	 \/* 读取文件当前位置 *\/$/;"	m	struct:Input
+error_INC	error.h	20;"	d
+file	input.h	/^	void *file;$/;"	m	struct:Input
+filename	input.h	/^	char *filename;$/;"	m	struct:Input
+input_INC	input.h	21;"	d
+line	input.h	/^	int line;$/;"	m	struct:Input
+linehead	input.h	/^	unsigned char *linehead; \/* 读取一行*\/$/;"	m	struct:Input
+readSourceFile	input.c	/^void readSourceFile(char *filename)$/;"	f
+size	input.h	/^	unsigned long size;$/;"	m	struct:Input
