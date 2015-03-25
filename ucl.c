@@ -25,10 +25,16 @@ int main(int argc, char *argv[])
 {
 	if(argc < 2)
 	{
-		fprintf("usage complie <filename>\n");
+		fprintf(stderr, "usage complie %s <filename> \n", argv[0]);
 		exit(0);
 	}
 	readSourceFile(argv[1]);
 
-	return 0
+	while(Input.linehead != Input.base + Input.size)
+	{
+		putchar(*Input.linehead);
+		Input.linehead ++;
+	}
+
+	return 0;
 }

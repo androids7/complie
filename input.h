@@ -20,7 +20,15 @@
 #ifndef  input_INC
 #define  input_INC
 
-struct Input
+typedef struct coord
+{
+	char *filename;
+	int ppline;
+	int line;
+	int col;
+}*Coord;    //行列信息
+
+struct input
 {
 	char *filename;
 	unsigned char *base;  	 /* 映射的文件基指针 */
@@ -32,7 +40,7 @@ struct Input
 };
 
 
-extern struct Input Input;
+extern struct input Input;
 extern unsigned char END_OF_FILE;
 
 void readSourceFile(char *filename);
